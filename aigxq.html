@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>成为dxf的一辈子喜欢的人</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        #myButton {
+            width: 150px;
+            height: 150px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+        #myButton:hover {
+            background-color: #388e3c;
+        }
+        #usagiImg {
+            display: none;
+            margin-top: 30px;
+            width: 200px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">点击成为dxf的一辈子喜欢的人</button>
+    <img id="usagiImg" src="https://i0.hdslb.com/bfs/article/d607e8a01175e0cd443fc8df50dbddc01942011.gif@600w_556h.avif" alt="乌萨奇">
+    <script>
+        document.getElementById('myButton').onclick = function() {
+            document.getElementById('usagiImg').style.display = 'block';
+            document.getElementById('myButton').innerHTML = '❤️ 爱你一万年';
+        }
+    </script>
+</body>
+</html>
